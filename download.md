@@ -16,7 +16,7 @@ Lead lang is distributed using **leadman**. The following command can install le
 irm https://leadlang.github.io/install.ps1 | iex
 ```
 
-== Linux / macOS / FreeBSD
+== Linux / macOS / BSD
 
 ```sh
 curl -fsSL https://leadlang.github.io/install.sh | bash
@@ -48,13 +48,13 @@ curl -fsSL https://leadlang.github.io/install.sh | bash
 
 ✅: Fully Supported
 
-🟨: Lead Docs not supported
+🟨: Lead Docs GUI Unavailable
 
 ❌: Not Supported, Not Planned either
 
 ⭐: See Below
 
-::: details **Note for linux users**
+::: details **Note for x86_64 linux users**
 You must have the following installed for **lead docs** desktop application
 
 | Package       | Version      |
@@ -63,4 +63,5 @@ You must have the following installed for **lead docs** desktop application
 
 You might follow [this](https://tauri.app/start/prerequisites/#linux)
 
+You can however use the **CLI** lead docs without setting these up
 :::
