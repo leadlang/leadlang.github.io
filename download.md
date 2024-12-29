@@ -19,38 +19,45 @@ irm https://leadlang.github.io/install.ps1 | iex
 == Linux / macOS / BSD
 
 ```sh
-curl -fsSL https://leadlang.github.io/install.sh | bash
+curl -fsSL https://leadlang.github.io/install.sh | sh
 ```
 
 :::
 
 ## Supported OS with Architectures
 
-| OS      | Architecture   | Supported | Notes                                |
-| ------- | :------------- | :-------: | :----------------------------------- |
-| Windows | x64            |    ✅     | Windows 10 or above                  |
-|         | arm64          |    ✅     | Windows 11                           |
-|         | i686 (32-bit)  |    ✅     | Windows 10 32 Bit                    |
-| macOS   | x64            |    ✅     |                                      |
-|         | arm64          |    ✅     |                                      |
-| Linux⭐ | x64            |    ✅     | Ubuntu 20.04 or above and equivalent |
-|         | i686 (32-bit)  |    🟨     |                                      |
-|         | arm64          |    🟨     |                                      |
-|         | armv7 (32-bit) |    🟨     |                                      |
-| FreeBSD | x64            |    🟨     |                                      |
-|         | i686 (32-bit)  |    🟨     |                                      |
-|         | arm64          |    🟨     |                                      |
-|         | armv7 (32-bit) |    ❌     |                                      |
-| NetBSD  | x64            |    🟨     |                                      |
-|         | i686 (32-bit)  |    ❌     |                                      |
-|         | arm64          |    ❌     |                                      |
-|         | armv7 (32-bit) |    ❌     |                                      |
+| OS           | Architecture   | Supported | Notes                                |
+| ------------ | :------------- | :-------: | :----------------------------------- |
+| Windows      | x64            |    ✅     | Windows 10 or above                  |
+|              | arm64          |    ✅     | Windows 11                           |
+|              | i686 (32-bit)  |    ✅     | Windows 10 32 Bit                    |
+| macOS        | x64            |    ✅     |                                      |
+|              | arm64          |    ✅     |                                      |
+| Linux⭐      | x64            |    ✅     | Ubuntu 20.04 or above and equivalent |
+|              | i686 (32-bit)  |    🟨     |                                      |
+|              | arm64          |    🟨     |                                      |
+|              | armv7 (32-bit) |    🟨     |                                      |
+| FreeBSD      | x64            |    🟨     |                                      |
+|              | i686 (32-bit)  |    🟨     |                                      |
+|              | arm64          |    🟨     |                                      |
+|              | armv7 (32-bit) |    🛠️     |                                      |
+| Illumos      | x64            |    🛠️     |                                      |
+| DragonFlyBSD | x64            |    🛠️     |                                      |
+| NetBSD       | x64            |    🟨     |                                      |
+|              | i686 (32-bit)  |    🛠️     |                                      |
+|              | arm64          |    🛠️     |                                      |
+|              | armv7 (32-bit) |    🛠️     |                                      |
+| Solaris      | x64            |    🛠️     |                                      |
+|              | sparc V9       |    🛠️     |                                      |
+| TempleOS     | x86            |    ❌     |
 
 ✅: Fully Supported
 
 🟨: Lead Docs GUI Unavailable
 
-❌: Not Supported, Not Planned either
+❌: Not Supported
+
+🛠️: Can be built from source
 
 ⭐: See Below
 
