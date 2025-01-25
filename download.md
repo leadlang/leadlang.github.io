@@ -25,7 +25,7 @@ curl -fsSL https://leadlang.github.io/install.sh | sh
 == FULL LIST (UNIX)
 
 ```sh
-curl -fsSL https://leadlang.github.io/installadv.sh | sh
+curl -o /tmp/install.sh https://leadlang.github.io/installadv.sh && sh /tmp/install.sh
 ```
 
 :::
