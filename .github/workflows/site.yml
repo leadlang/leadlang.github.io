@@ -36,6 +36,8 @@ jobs:
 
           curl https://raw.githubusercontent.com/leadlang/lead/refs/heads/main/leadman_unix.sh -o ./.vitepress/dist/install.sh
           curl https://raw.githubusercontent.com/leadlang/lead/refs/heads/main/leadman_windows.ps1 -o ./.vitepress/dist/install.ps1
+          curl https://raw.githubusercontent.com/leadlang/lead/refs/heads/main/leadman_unix_avd.sh -o ./.vitepress/dist/install_advanced.sh
+          curl https://raw.githubusercontent.com/leadlang/lead/refs/heads/main/avd_strap.sh -o ./.vitepress/dist/installadv.sh
           cp ./*.svg ./.vitepress/dist/
 
       - name: Upload artifact
