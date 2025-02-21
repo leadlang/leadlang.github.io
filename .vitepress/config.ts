@@ -65,8 +65,57 @@ export default defineConfig({
     }
   },
   markdown: {
+    languages: [
+      {
+        name: "lead",
+        aliases: ["pb"],
+        displayName: "Lead",
+        scopeName: "source.leadlang",
+        repository: {
+
+        },
+        patterns: [
+          {
+            match: "@s",
+            name: "support.function"
+          },
+          {
+            match: "# [a-zA-Z_][a-zA-Z0-9_]*",
+            name: "comment.line"
+          },
+          {
+            match: "\\$[a-zA-Z_][a-zA-Z0-9_]*:",
+            name: "variable.parameter"
+          },
+          {
+            match: "\\$",
+            name: "storage.modifier"
+          },
+          {
+            match: "->&\\$",
+            name: "storage.modifier"
+          },
+          {
+            match: "->\\$",
+            name: "storage.modifier"
+          },
+          {
+            match: "\\$[a-zA-Z_][a-zA-Z0-9_]*",
+            name: "variable.other"
+          },
+          {
+            match: "\"(.*?)\"",
+            name: "string.quoted.double"
+          },
+          {
+            match: "\\b(print|drop)\\b",
+            name: "entity.name.function"
+          }
+        ]
+      }
+    ],
     config(md) {
       md.use(tabsMarkdownPlugin)
     }
   }
-})
+});
