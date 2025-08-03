@@ -17,14 +17,14 @@ hero:
   actions:
     - theme: brand
       text: The Lead Programming Language
-      link: /lead
+      link: /lead/
     - theme: alt
       text: Lead Runtime (LRT)
-      link: /lrtexec
+      link: /lrtexec/
 ---
 
 > [!NOTE]
-> You might be looking for [LeadLang](/lead) home page. We've moved to [here](/lead)!
+> You might be looking for [LeadLang](/lead/) home page. We've moved to [here](/lead/)!
 
 ---
 
@@ -101,12 +101,12 @@ hero:
   <h1 :class="$style.mx">Our projects</h1>
 
   <div :class="$style.proj">
-    <a href="/lead" :class="$style['project-card']">
+    <a href="/lead/" :class="$style['project-card']">
       <img src="/icon.svg" style="border-radius:7px;height:5rem;" />
       <h2>LeadLang</h2>
       <p>The experimental programming language itself.</p>
     </a>
-    <a href="/lrtexec" :class="$style['project-card']">
+    <a href="/lrtexec/" :class="$style['project-card']">
       <img src="/icon.svg" style="border-radius:7px;height:5rem;" />
       <h2><strong>L</strong>ead <strong>R</strong>un<strong>t</strong>ime (LRT)</h2>
       <p>The executable environment for Lead programs.</p>
