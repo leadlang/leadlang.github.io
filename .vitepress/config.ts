@@ -3,8 +3,8 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Lead",
-  description: "An Experimental Programming Language",
+  title: "Lead Foundation",
+  description: "An Experiment",
   appearance: "dark",
   lang: "en-US",
   head: [
@@ -35,22 +35,48 @@ export default defineConfig({
     logo: "/icon.svg",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Download', link: '/download' },
-      { text: 'Learn', link: '/learn/' }
+      {
+        text: "Foundation",
+        link: "/"
+      },
+      {
+        text: "Lead",
+        items: [
+          {
+            text: "Home",
+            link: "/lead/"
+          },
+          {
+            text: "Download",
+            link: "/lead/download"
+          },
+          {
+            text: "Learn",
+            link: "/lead/learn"
+          }
+        ]
+      },
     ],
 
     sidebar: [
       {
-        text: 'Download',
+        text: "Lead",
+        collapsed: true,
         items: [
-          { text: "Get Lead Lang", link: "/download" }
-        ]
-      },
-      {
-        text: 'Learn',
-        items: [
-          { text: "Basics", link: "/learn/" }
+          {
+            text: 'Download',
+            collapsed: true,
+            items: [
+              { text: "Get Lead Lang", link: "/lead/download" }
+            ]
+          },
+          {
+            text: 'Learn',
+            collapsed: true,
+            items: [
+              { text: "Basics", link: "/lead/learn/" }
+            ]
+          }
         ]
       }
     ],
@@ -61,7 +87,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: `Copyright © 2023-${new Date().getFullYear()} Lead Programming Language`
+      copyright: `Copyright © 2023-${new Date().getFullYear()} Lead Programming Language Foundation`
     }
   },
   markdown: {
@@ -117,5 +143,6 @@ export default defineConfig({
     config(md) {
       md.use(tabsMarkdownPlugin)
     }
-  }
+  },
+  lastUpdated: true
 });
